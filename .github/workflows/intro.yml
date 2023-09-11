@@ -1,0 +1,11 @@
+name: Intro to github actions
+
+on:
+  push:
+
+jobs:
+  hello-world: # job name
+    runs-on: ubuntu-latest # 
+    steps:
+      - name: actions/checkout@v2
+        run: echo "Hello world"
